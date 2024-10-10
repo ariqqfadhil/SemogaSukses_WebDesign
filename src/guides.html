@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guides.css">
+    <title>WasteCut</title>
+    <script defer>
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+</head>
+<body id="#top">
+    <nav>
+        <img src="../public/WasteCut logo3.png" alt="WasteCutLogo" class="logo">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="guides.html" class="active">Guides</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+    <h1> </h1>
+    <br><br><br><br>
+    <h2>How The Little Things Can Change Everything</h2>
+    <br>
+    <div class="container">
+        <div class="content content-1">
+            Every day, the world produces approximately <span class="colored-text">11 million</span> tons of new waste, 
+            a staggering figure that highlights the growing environmental challenge we face. 
+            This waste comes from various sources, including households, industries, 
+            and construction activities, with plastic waste being a significant contributor.
+            <br><br>
+            As populations increase and urban areas expand, waste generation continues to rise, 
+            posing serious threats to ecosystems and human health. Without effective 
+            waste management and reduction strategies, global waste levels are projected to reach 
+            <span class="colored-text">3.4 billion tons</span> annually by 2050, making sustainable solutions more urgent than ever.
+        </div>
+        <div class="content content-2">
+            <img src="../public/guides2.png">
+        </div>
+    </div>
+    <br>
+    <div class="container1">
+        <div class="content1 content1-1">
+            How the Little Things <br> Can Change Everything
+        </div>
+        <div class="content content1-2">
+            The Earth is our shared home. It’s our 
+            duty to protect and preserve its beauty
+            for future generations. Together, we can
+            make a difference and ensure a 
+            sustainable future.
+        <br><br>
+        <a href="support.html">
+            <button class="content1-button">↪ Contribute Now</button>
+        </a>
+        </div>
+    </div>
+    <br>
+    <h3>
+        Value About Waste
+        <p>Waste, when properly managed, offers benefits like resource recovery, energy<br>savings, 
+            and pollution reduction.</p>
+    </h3>
+    <br><br><br>
+    <div class="container2">
+        <div class="container2-left">
+            <header>Organic Waste</header>
+            <sub>Fertilizer</sub>
+            <p>Organic waste such as food scraps and garden waste can be composted to produce natural 
+                fertilizers. This improves soil quality and promotes sustainable agriculture.</p>
+            <br>
+            <header style="padding-right: 3rem;">Plastic Waste</header>
+            <sub style="padding-right: 3rem;">Recycling and Repurposing</sub>
+            <p style="padding-right: 3rem;">Plastic waste can be recycled into new products, reducing the need for virgin materials 
+                and conserving energy. Repurposed plastic can be used in construction, textiles, and 
+                consumer goods.</p>
+            <br>
+            <header>Paper Waste</header>
+            <sub>Recycled Paper Products</sub>
+            <p>Paper waste is easily recyclable and can be turned into new paper products, 
+                such as cardboard, office paper, and packaging. This helps reduce deforestation 
+                and conserve water.</p>
+        </div>
+        <img src="../public/guides4.png">
+        <div class="container2-right">
+            <header>Electornic Waste</header>
+            <sub>Valuable Materials Recovery</sub>
+            <p>E-waste contains valuable metals like gold, silver, and copper that can be recovered 
+                and reused. Recycling electronics helps reduce the need for mining new raw materials 
+                and prevents harmful chemicals from polluting the environment.</p>
+            <br>
+            <header style="padding-left: 3rem;">Glass Waste</header>
+            <sub style="padding-left: 3rem;">Reusable and Recyclable</sub>
+            <p style="padding-left: 3rem;">Glass is 100% recyclable and can be endlessly repurposed into new glass products without 
+                losing quality. Recycled glass saves energy and reduces the need for raw materials.</p>
+            <br>
+            <header>Metal Waste</header>
+            <sub>Energy and Resource Conservation</sub>
+            <p>Metals like aluminum and steel can be recycled multiple times without degrading in 
+                quality. Recycling metals saves significant amounts of energy and reduces greenhouse 
+                gas emissions compared to producing new metals from raw ore.</p>
+        </div>
+    </div>
+    <br><br><br>
+    <h4>Waste, when properly managed and utilized, offers several significant benefits. Organic waste 
+        can be composted to create nutrient-rich fertilizers, promoting healthier soils and reducing the 
+        need for chemical inputs in agriculture. Plastic and paper waste, through recycling, can be 
+        transformed into new products, conserving resources, reducing energy consumption, and minimizing 
+        environmental pollution. Additionally, electronic waste contains valuable metals that can be 
+        recovered, reducing the demand for raw mining and preventing hazardous chemicals from contaminating ecosystems. 
+        Glass and metal waste can be endlessly recycled, saving energy and lowering greenhouse gas emissions. 
+        These processes not only extend the lifecycle of materials but also contribute to a more sustainable 
+        and circular economy, turning waste into valuable resources.</h4>
+    <br><br><br>
+    <h5> </h5>
+    <h6>
+        Join Us to Save the Earth<br>Donations and Sponsorships for a Greener Future
+        <br><br>
+        <a href="https://wa.wizard.id/3a9cbe">
+            <button class="h6-button">↪ Contact</button>
+        </a>
+    </h6>
+    <div class="moving-text">
+        <img src="../public/moving.png">#Together
+    </div>
+    <footer>
+        <div class="contact-section">
+            <header>Start Your Journey</header>
+            <br>
+            <sub>Let's Join<br><span class="white-text">With Us</span></sub>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject">Subject<span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-2">Phone Number<span class="required">*</span></label>
+                        <input type="email" id="email-2" name="email-2" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject-2">Subject<span class="required">*</span></label>
+                        <input type="text" id="subject-2" name="subject-2" required>
+                    </div>
+                </div>
+                <p class="required-note">Fields marked with an asterisk (*) are required!</p>
+                <button type="submit" class="form-button">Send Request</button>
+            </form>
+        </div>
+            <div class="footer-container">
+                <div class="footer footer-1">
+                    <a href="#top" class="back-to-top">Back to top</a> ___
+                </div>
+                <div class="footer footer-2">
+                    @Not Copyrigted - WasteCut
+                </div>
+                <div class="footer footer-3">
+                    <a href="https://www.instagram.com/" class="back-to-top">Follow Us On</a>
+                </div>
+            </div>
+    </footer>   
+</body>
+</html>

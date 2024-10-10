@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteCut</title>
+    <link rel="stylesheet" href="community.css">
+    <script defer>
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        function animateCounter() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target'); // Ambil nilai target
+                    const count = +counter.innerText; // Nilai saat ini
+
+                    const increment = target / 200; // Tentukan seberapa cepat animasi berjalan
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment); // Update nilai angka
+                        setTimeout(updateCount, 10); // Update setiap 10ms
+                    } else {
+                        counter.innerText = target; // Pastikan angka akhir sesuai target
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        window.onload = function() {
+            animateCounter();
+        };
+    </script>
+</head>
+<body id="#top">
+    <nav>
+        <img src="../public/WasteCut logo3.png" alt="WasteCutLogo" class="logo">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="community.html" class="active">Community</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+    <h1> </h1>
+    <div class="container">
+        <div class="content content-1">
+            With the growing population and rising consumption rates, 
+            the amount of waste generated each year continues to increase. 
+            Many countries struggle to manage the ever-growing volume of waste.
+        </div>
+    </div>
+    <br>
+    <div class="container1">
+        <div class="content1 content1-1">
+            Waste Cut is a dedicated community initiative focused
+            on addressing the pressing issue of waste management
+            and environmental preservation. Founded by a group of
+            passionate individuals, our mission is to reduce waste 
+            and promote sustainable practices within our local 
+            community and beyond.
+        </div>
+        <div class="content1 content1-2">
+            We envision a cleaner, greener planet where waste is minimized, 
+            and environmental awareness is ingrained in daily life. 
+            Our goal is to inspire individuals and organizations to take actionable 
+            steps toward reducing their ecological footprint.
+        </div>
+        <div class="content1 content1-3">
+            Through collaborative projects, we involve local residents, schools, 
+            and businesses in initiatives aimed at minimizing waste and 
+            promoting responsible consumption.
+        </div>
+        <div class="content1 content1-4">
+            At Waste Cut, we believe that change starts with each one of us. 
+            Together, we can make a significant impact on our environment. 
+            Join our community to be part of the solution, share your ideas, 
+            and help us create a sustainable future for generations to come. Together, 
+            we can cut waste and nurture the planet!
+        </div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="content2">
+            <h2>Community</h2>
+            <p>1329+</p>
+        </div>
+        <div class="content2">
+            <h2>Value of Project</h2>
+            <p>$34b+</p>
+        </div>
+        <div class="content2">
+            <h2>Country Partnership</h2>
+            <p>34</p>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <h3> </h3>
+    <br><br><br><br>
+    <h4>
+        Join Us to Save the Earth<br>Donations and Sponsorships for a Greener Future
+        <br><br>
+        <a href="https://wa.wizard.id/3a9cbe">
+        <button class="h4-button">↪ Contact</button>
+        </a>
+    </h4>
+    <div class="moving-text">
+        <img src="../public/moving.png">#Together
+    </div>
+    <footer>
+        <div class="contact-section">
+            <header>Start Your Journey</header>
+            <br>
+            <sub>Let's Join<br><span class="white-text">With Us</span></sub>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject">Subject<span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-2">Phone Number<span class="required">*</span></label>
+                        <input type="email" id="email-2" name="email-2" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject-2">Subject<span class="required">*</span></label>
+                        <input type="text" id="subject-2" name="subject-2" required>
+                    </div>
+                </div>
+                <p class="required-note">Fields marked with an asterisk (*) are required!</p>
+                <button type="submit" class="form-button">Send Request</button>
+            </form>
+        </div>
+            <div class="footer-container">
+                <div class="footer footer-1">
+                    <a href="#top" class="back-to-top">Back to top</a> ___
+                </div>
+                <div class="footer footer-2">
+                    @Not Copyrigted - WasteCut
+                </div>
+                <div class="footer footer-3">
+                    <a href="https://www.instagram.com/" class="back-to-top">Follow Us On</a>
+                </div>
+            </div>
+    </footer>   
+</body>
+</html>
