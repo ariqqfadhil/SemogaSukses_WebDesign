@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteCut</title>
+    <link rel="stylesheet" href="events.css">
+    <script defer>
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+</head>
+<body id="#top">
+    <nav>
+        <img src="../public/WasteCut logo3.png" alt="WasteCutLogo" class="logo">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </nav>
+    <h1><span class="header-text">Programs at WasteCut</span>
+        <img src="../public/events1.png">
+    </h1>
+    <br><br><br>
+    <h2>ALL Programs & Events</h2>
+    <div class="container">
+        <div class="content content-1">
+            <img src="../public/events2.png">
+            <span class="padding-text">Green Walk</span>
+            <br><br><br>
+            <p>📅 Oct 18, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events3.png">
+            <span class="padding-text">Eco Craft</span>
+            <br><br><br>
+            <p>📅 Dec 31, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events4.png">
+            <span class="padding-text">Clean Up Challenge</span>
+            <br><br><br>
+            <p>📅 Dec 14, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events5.png">
+            <span class="padding-text">Green Talks</span>
+            <br><br><br>
+            <p>📅Oct 26, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events6.png">
+            <span class="padding-text">Zero Waste Lifestyle Workshop</span>
+            <br><br><br>
+            <p>📅 Oct 28, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events7.png">
+            <span class="padding-text">Save Our Oceans</span>
+            <br><br><br>
+            <P>📅 Oct 30, 2024<button class="arrow-button">→</button></P>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events8.png">
+            <span class="padding-text">Green Youth Summit</span>
+            <br><br><br>
+            <p>📅 Oct 21, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events9.png">
+            <span class="padding-text">Eco Clean-Up Day</span>
+            <br><br><br>
+            <p>📅 Oct 23, 2024<button class="arrow-button">→</button></p>
+        </div>
+        <div class="content content-1">
+            <img src="../public/events10.png">
+            <span class="padding-text">River Cleanup Drive</span>
+            <br><br><br>
+            <p>📅 Oct 26, 2024<button class="arrow-button">→</button></p>
+        </div>
+    </div>
+    <br><br><br><br>
+    <h3>
+        Join Us to Save the Earth<br>Donations and Sponsorships for a Greener Future
+        <br><br>
+        <a href="https://wa.wizard.id/3a9cbe">
+            <button class="h3-button">↪ Contact</button>
+        </a>
+    </h3>
+    <div class="moving-text">
+        <img src="../public/moving.png">#Together
+    </div>
+    <footer>
+        <div class="contact-section">
+            <header>Start Your Journey</header>
+            <br>
+            <sub>Let's Join<br><span class="white-text">With Us</span></sub>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject">Subject<span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-2">Phone Number<span class="required">*</span></label>
+                        <input type="email" id="email-2" name="email-2" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject-2">Subject<span class="required">*</span></label>
+                        <input type="text" id="subject-2" name="subject-2" required>
+                    </div>
+                </div>
+                <p class="required-note">Fields marked with an asterisk (*) are required!</p>
+                <button type="submit" class="form-button">Send Request</button>
+            </form>
+        </div>
+            <div class="footer-container">
+                <div class="footer footer-1">
+                    <a href="#top" class="back-to-top">Back to top</a> ___
+                </div>
+                <div class="footer footer-2">
+                    @Not Copyrigted - WasteCut
+                </div>
+                <div class="footer footer-3">
+                    <a href="https://www.instagram.com/" class="back-to-top">Follow Us On</a>
+                </div>
+            </div>
+    </footer>   
+</body>
+</html>

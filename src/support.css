@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #006766;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.back-to-top {
+    color: white;
+}
+
+nav {
+    position: fixed; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    height: 50px;
+    margin-right: auto;
+    padding-left: 8%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10rem;
+}
+
+nav ul li {
+    margin-right: 20px;    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-family: Outfit;
+}
+
+nav ul li a:hover {
+    color: #E04026;
+}
+
+nav ul li a.active {
+    color: #E04026;
+}
+
+nav.scrolled {
+    background-color: white;
+    transition: background-color 0.8 ease;
+}
+
+h1 {
+    font-family: Outfit;
+    font-size: 50px;
+    font-weight: 700;
+    color: #2E2E2E;
+    padding-top: 15rem;
+    background: linear-gradient(180deg, #D9D9D9 16%, #006766 100%);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.header-text {
+    padding-left: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    width: 30rem;
+    font-family: Outfit;
+    text-align: start;
+}
+
+.content img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+.content-1 header {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F4D44B;
+    padding-top: 3rem;
+}
+
+.content-1 p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 2;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #D9D9D9;
+    margin-top: 20rem;
+    align-items: center;
+}
+
+.content1 {
+    width: 50%;
+    font-family: Outfit;
+    color: black;
+}
+
+.content1-1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 10rem;
+}
+
+.content1-2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    padding-bottom: 10rem;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../public/Rectangle\ 114.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 35rem;
+    z-index: 1;
+}
+
+.container2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content2 {
+    width: 90%;
+}
+
+.content2-1 {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+
+.content2-2 {
+    width: 40%;
+    font-family: Outfit;
+    font-size:  18px;
+    font-weight: 400;
+    color: white;
+    padding-top: 10rem;
+    padding-right: 5rem;
+}
+
+.content2-button {
+    font-family: Outfit;
+    font-size: 10px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3 ease;
+}
+
+.content2-button:hover {
+    background-color: #F4D44B;
+}
+
+h3 {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.h3-button {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    background-color: #F4D44B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3 ease;
+
+}
+
+.h3-button:hover {
+    background-color: white;
+}
+
+.contact-section {
+    margin-top: 10rem;
+    padding-left: 10rem;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 100px;
+}
+
+.contact-section header {
+    font-size: 20px;
+    font-weight: 400;
+    color: #B0B0B0;
+    padding-left: 0;
+}
+
+.contact-section sub {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #F4D44B;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: move-left 20s linear infinite;
+    font-family: Outfit;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    z-index: -1;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.moving-text img {
+    width: 12%;
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(100rem);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.white-text {
+    color: white;
+}
+
+.contact-form {
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex-basis: 48%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom: 1px solid #F4D44B;
+}
+
+.required-note {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.form-button {
+    background-color: #5A7D7C;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #F4D44B;
+    color: black;
+}
+
+.footer-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    gap: 20rem;
+}
+
+.footer {
+    background-color: black;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-1 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-2 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-3 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}

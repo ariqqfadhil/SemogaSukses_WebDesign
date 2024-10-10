@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #006766;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.back-to-top {
+    color: white;
+}
+
+nav {
+    position: fixed; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    height: 50px;
+    margin-right: auto;
+    padding-left: 8%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10rem;
+}
+
+nav ul li {
+    margin-right: 20px;    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-family: Outfit;
+}
+
+nav ul li a:hover {
+    color: #E04026;
+}
+
+nav ul li a.active {
+    color: #E04026;
+}
+
+nav.scrolled {
+    background-color: white;
+    transition: background-color 0.8 ease;
+}
+
+h1 {
+    padding-top: 15rem;
+    background-image: url(../public/guidesh1.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 40rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.content {
+    width: 30rem;
+    text-align: start;
+    font-family: Outfit;
+}
+
+.content-1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    color: white;
+}
+
+.content-2 img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.content-2 img:hover {
+    transform: scale(1.1);
+}
+
+.content-2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.colored-text {
+    color: #F4D44B;
+}
+
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../public/guides3.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10rem;
+    min-height: 100rem;
+    z-index: 1;
+}
+
+.container1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content1 {
+    width: 90%;
+}
+
+.content1-1 {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    padding-top: 10rem;
+    padding-left: 5rem;
+}
+
+.content1-2 {
+    font-family: Outfit;
+    font-size:  18px;
+    font-weight: 400;
+    color: white;
+    padding-top: 10rem;
+    padding-right: 5rem;
+}
+
+.content1-button {
+    font-family: Outfit;
+    font-size: 10px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3 ease;
+}
+
+.content1-button:hover {
+    background-color: #F4D44B;
+}
+
+h3 {
+    font-family: Outfit;
+    font-size: 40px;
+    font-weight: 800;
+    color: #F4D44B;
+    text-align: center;
+    text-shadow: 3px 3px 1px #E04026;
+}
+
+h3 p {
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 400;
+    color: #F4D44B;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+.container2 img {
+    width: 25%;
+    transition: transform 0.5s ease;
+}
+
+.container2 img:hover {
+    transform: scale(1.1);
+}
+
+.container2-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-end;
+    text-align: end;
+    padding-right: 2rem;
+}
+
+.container2-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    text-align: start;
+    padding-left: 2rem;
+}
+
+.container2 header {
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 700;
+    color: #F4D44B;
+}
+
+.container2 sub {
+    font-family: Outfit;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+.container2 p {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+h4 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h5 {
+    position: relative;
+    background-image: url(../public/guides5.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50rem;
+    z-index: 1;
+}
+
+h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+h6 {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.h6-button {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    background-color: #F4D44B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3 ease;
+
+}
+
+.h6-button:hover {
+    background-color: white;
+}
+
+.contact-section {
+    margin-top: 10rem;
+    padding-left: 10rem;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 100px;
+}
+
+.contact-section header {
+    font-size: 20px;
+    font-weight: 400;
+    color: #B0B0B0;
+    padding-left: 0;
+}
+
+.contact-section sub {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #F4D44B;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+
+.white-text {
+    color: white;
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: move-left 20s linear infinite;
+    font-family: Outfit;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    z-index: -1;
+}
+
+.moving-text img {
+    width: 12%;
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(100rem);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.contact-form {
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex-basis: 48%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom: 1px solid #F4D44B;
+}
+
+.required-note {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.form-button {
+    background-color: #5A7D7C;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #F4D44B;
+    color: black;
+}
+
+.footer-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    gap: 20rem;
+}
+
+.footer {
+    background-color: black;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-1 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-2 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-3 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}

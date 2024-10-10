@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #006766;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.back-to-top {
+    color: white;
+}
+
+nav {
+    position: fixed; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    height: 50px;
+    margin-right: auto;
+    padding-left: 8%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10rem;
+}
+
+nav ul li {
+    margin-right: 20px;    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-family: Outfit;
+}
+
+nav ul li a:hover {
+    color: #E04026;
+}
+
+nav ul li a.active {
+    color: #E04026;
+}
+
+nav.scrolled {
+    background-color: white;
+    transition: background-color 0.8 ease;
+}
+
+h1 {
+    padding-top: 15rem;
+    background-image: url(../public/Rectangle\ 100.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 40rem;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5rem;
+    width: 50%;
+}
+
+.content {
+    width: 30rem;
+    text-align: start;
+    font-family: Outfit;
+}
+
+.content-1 {
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    flex: 1;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 7rem;
+    gap: 2rem;
+    line-height: 2;
+}
+
+.content1 {
+    width: 20rem;
+    text-align: start;
+    font-family: Outfit;
+}
+
+.content1-1 {
+    font-family: Outfit;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.content1-2 {
+    font-family: Outfit;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.content1-3 {
+    font-family: Outfit;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.content1-4 {
+    font-family: Outfit;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.content2 {
+    width: 22rem;
+    text-align: start;
+    font-family: Outfit;
+    background-color: #0A605F;
+    border: solid;
+    border-color: #2A8E8D;
+}
+
+.content2 h2 {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding-left: 20px;
+}
+
+.content2 p {
+    font-family: Outfit;
+    font-size: 70px;
+    font-weight: 400;
+    color: #F4D44B;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    position: relative;
+    background-image: url(../public/Rectangle\ 116.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50rem;
+    margin: 0;
+    z-index: 1;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+h4 {
+    font-family: Outfit;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.h4-button {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    background-color: #F4D44B;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.3 ease;
+
+}
+
+.h4-button:hover {
+    background-color: white;
+}
+
+.contact-section {
+    margin-top: 10rem;
+    padding-left: 10rem;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 100px;
+}
+
+.contact-section header {
+    font-size: 20px;
+    font-weight: 400;
+    color: #B0B0B0;
+    padding-left: 0;
+}
+
+.contact-section sub {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #F4D44B;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: move-left 20s linear infinite;
+    font-family: Outfit;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    z-index: -1;
+}
+
+.moving-text img {
+    width: 12%;
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(100rem);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.white-text {
+    color: white;
+}
+
+.contact-form {
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex-basis: 48%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.required {
+    color: white;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom: 1px solid #F4D44B;
+}
+
+.required-note {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.form-button {
+    background-color: #5A7D7C;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #F4D44B;
+    color: black;
+}
+
+.footer-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    gap: 20rem;
+}
+
+.footer {
+    background-color: black;
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-1 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-2 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-3 {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+}
+
