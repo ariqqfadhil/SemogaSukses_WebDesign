@@ -1,4 +1,4 @@
-# SemogaSukses_WebDesign
+# WasteCut
 
 Welcome to Waste Cut – A Community for a Cleaner Planet.
 Waste pollution is a growing global crisis, affecting our oceans, wildlife, and communities. At Waste Cut, we believe in the power of collective action to make a difference. Inspired by initiatives like Pandawara, our platform connects people who are passionate about tackling waste and promoting sustainable living.
