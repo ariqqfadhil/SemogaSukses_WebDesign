@@ -12,7 +12,7 @@ html, body {
 body {
     overflow-x: hidden;
 }
-
+    
 .back-to-top {
     color: white;
 }
@@ -83,7 +83,7 @@ h1 {
 }
 
 .moving-text {
-    position: absolute;
+    position: relative;
     white-space: nowrap;
     animation: move-left 20s linear infinite;
     font-family: Outfit;
@@ -191,15 +191,18 @@ h3 {
 }
 
 .news-item {
+    overflow: hidden;
     text-align: start;
-    width: 30%;
+    width: 100%;
+    height: auto;
 }
 
 .news-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.5s ease;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .news-images img:hover {
@@ -224,6 +227,7 @@ h3 {
 
 .news-headline {
     color: white;
+    text-decoration: none;
 }
 
 .container {
@@ -238,7 +242,7 @@ h3 {
     background-image: url(../public/Background.png);
     background-size: cover;
     background-position: center;
-    min-height: 100rem;
+    min-height: 20rem;
     z-index: 1;
 }
 
@@ -314,6 +318,7 @@ h3 {
     font-size: 40px;
     font-weight: 800;
     color: #F4D44B;
+    overflow: hidden;
 }
 
 .item-2 {
